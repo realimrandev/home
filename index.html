@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search (Google-style mock)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top black nav like old Google screenshot -->
+  <header class="topbar">
+    <nav class="topbar__left" aria-label="Top navigation">
+      <a href="#" class="topbar__link">Web</a>
+      <a href="#" class="topbar__link">Images</a>
+      <a href="#" class="topbar__link">Videos</a>
+      <a href="#" class="topbar__link">Maps</a>
+      <a href="#" class="topbar__link">News</a>
+      <a href="#" class="topbar__link">Shopping</a>
+      <a href="#" class="topbar__link">Gmail</a>
+      <a href="#" class="topbar__link">more ▾</a>
+    </nav>
+
+    <div class="topbar__right">
+      <a href="#" class="topbar__link">Sign in</a>
+      <button class="gear" type="button" aria-label="Settings">
+        <span aria-hidden="true">⚙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page" role="main">
+    <section class="hero" aria-label="Search">
+      <!-- Note: This is a visual mock. The real Google logo is a trademark. -->
+      <h1 class="logo" aria-label="Google">
+        <span class="b">G</span><span class="r">o</span><span class="y">o</span><span class="b">g</span><span class="g">l</span><span class="r">e</span>
+      </h1>
+
+      <form class="search" action="#" method="get">
+        <label class="sr-only" for="q">Search</label>
+        <input id="q" name="q" class="search__input" type="text" autocomplete="off" />
+        <div class="search__actions">
+          <button class="btn" type="submit">Google Search</button>
+          <button class="btn" type="button">I'm Feeling Lucky</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer" aria-label="Footer links">
+      <div class="footer__left">
+        <a href="#">Advertising Programs</a>
+        <span class="sep">|</span>
+        <a href="#">Business Solutions</a>
+        <span class="sep">|</span>
+        <a href="#">About Google</a>
+        <span class="sep">|</span>
+        <a href="#">Privacy</a>
+      </div>
+      <div class="footer__right">
+        <a href="#">Change background image</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
